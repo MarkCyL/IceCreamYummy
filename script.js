@@ -35,21 +35,20 @@ window.addEventListener('load', function() {
     const tabs = document.querySelectorAll('.tab-pane');
     const buttons = document.querySelectorAll('.tab-button');
 
-    // Hide all tab content
+   
     tabs.forEach(tab => tab.classList.remove('active'));
 
-    // Remove active class from all buttons
+  
     buttons.forEach(button => button.classList.remove('active'));
 
-    // Show the clicked tab content
+
     document.getElementById(tabId).classList.add('active');
-    
-    // Add active class to the clicked button
+
     const activeButton = [...buttons].find(button => button.textContent.toLowerCase().includes(tabId));
     if (activeButton) activeButton.classList.add('active');
 }
 
-// Optionally, show the first tab by default
+
 document.addEventListener('DOMContentLoaded', () => {
     openTab('tab1');
 });
