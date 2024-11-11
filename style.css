@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Nunito", sans-serif;
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(45deg, #bebebe 0%, #3b4fff 100%);
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+opacity: 1;
+transition: opacity 0.5s ease;
+margin-top: 60px;
+}
+#text {
+    opacity: 1;
+    transition: opacity 0.5s ease; 
+  }
+  
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+  
+
+
+
+.header-bar {
+    position: fixed;      
+    top: 0;              
+    width: 100%;           
+    background-color: #ffee00; 
+    color: white;          
+    padding: 10px 0;      
+    z-index: 1000;        
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;      
+}
+
+.header-bar .link ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;           
+}
+
+.header-bar .link ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s; 
+}
+
+.header-bar .link ul li a:hover {
+    background-color: #555; 
+    border-radius: 4px;
+}
+
+
+
+.login-bth:hover{
+    padding: 4px 20px;
+    border-radius: 5px;
+    background-color: aqua;
+    border: 2px solid aqua;
+}
+.navigation i{
+    color: maroon;
+    font-size: 40px;
+    display: none;
+}
+h1{
+    color: rgb(4, 57, 104);
+    cursor: pointer;
+    text-align: center;
+    
+    
+}
+
+
+h2{
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+    word-spacing: 2px;
+    font-size: larger;
+}
+label{
+    padding-left:16px ;
+    opacity: 0.75;
+}
+input{
+    display: flex;
+    border-radius: 50px;
+    border-style: none;
+    outline: none;
+    margin-top:8px ;
+    width: 250px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+input:focus{
+    opacity: 0.7;
+}
+
+button{
+    padding: 12px 48px;
+    border-radius:50px ;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-width:0 ;
+    background-color: #1e30ff;
+    font-weight: 600;
+    width: 100%;
+}
+
+.button-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.signup {
+    padding-left: 5px;
+    text-decoration: none;
+    color:#0f1517;
+    cursor: pointer;
+}
+
+.signup:hover {
+    opacity: 0.8;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.sub-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: 70vh;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: white;
+} 
+.main {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.sub-main{
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.sub-crl {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/* panel ni diri na part pre */
+
+.panel-container {
+  display: flex;
+  gap: 20px; 
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.panel {
+  background-color: #cacaca;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  
+}
+
+.panel:hover {
+  transform: translateY(10px); /* effect*/
+}
+
+.panel-image {
+  width: 100%;
+  height: auto;
+}
+
+.panel-text {
+  padding: 15px;
+}s
+
+.panel-text h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #bdbdbda6;
+}
+
+.panel-text p {
+  font-size: 16px;
+  color: #000000;
+}
+
+
+
+
+
+/* home ni diri na part */
+.tab-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-pane {
+    display: none;
+    text-align: center;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* transition ni mga pre */
+
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0; 
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+  
+  
+  .font-sample {
+    animation: slideIn 1s ease-out forwards; 
+  }
+ 
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* slide up diri pre */
+  .panel-container {
+    animation: slideUp 1s ease-out forwards;
+    opacity: 0; 
+  }
+  
+ 
+  .panel {
+    overflow: hidden; 
+  }
+  
